@@ -1,0 +1,98 @@
+html{
+    color: #D5E3F1;
+    font-size: 16px;
+}
+body{
+    background-color: #1D396D;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    color: black;
+    margin-left: 5px;
+}
+/*Navigation bar*/
+header{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    z-index: 1;
+    background-image: linear-gradient(to right,#D5E3F1,#151515) ;
+
+} 
+.img-header{
+    height: 50px;
+    width: 50px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+} 
+nav{
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    align-items: center;
+    margin: 0;
+    margin-left: auto;
+}
+nav a {
+    padding: 20px 10px;
+    color: #D5E3F1;
+    text-decoration: none;
+}
+
+/*About section*/
+.about{
+    display: flex;
+    background-color: black;
+    align-self: center;
+}
+.about div{
+    margin: 20px;
+    padding-top: 100px;
+}
+.about img{
+    width: 600px;
+}
+
+/*Skills Section*/
+.skills{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/*Portfolio Section*/
+.portfolio{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.portfolio-item img{
+    border-radius: 10px;
+    height: 100px;
+    width: 100px;
+}
+
+/*Footer Section*/
+footer{
+    color: black;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-top: 50px;
+}
+footer h1{
+    margin: 0px 2px 0px 5px;
+}
+footer p{
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    align-items: center;
+    margin: 0;
+    margin-left: auto;
+}
