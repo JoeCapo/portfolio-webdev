@@ -58,11 +58,34 @@ nav a {
     width: 600px;
 }
 
+/*Accordion*/
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 5px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+  }
+  .active, .accordion:hover {
+    background-color: #ccc;
+  }
+  .panel {
+    padding: 0px 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+  }
+
 /*Skills Section*/
 .skills{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    margin-top: 10px;
 }
 
 /*Portfolio Section*/
@@ -84,6 +107,7 @@ footer{
     align-items: center;
     width: 100%;
     padding-top: 50px;
+    margin: 5px'
 }
 footer h1{
     margin: 0px 2px 0px 5px;
@@ -95,4 +119,5 @@ footer p{
     align-items: center;
     margin: 0;
     margin-left: auto;
+    padding-left: 5px;
 }

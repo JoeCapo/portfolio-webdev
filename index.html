@@ -36,28 +36,14 @@
             </div>
             <img src="images/bolt.jpg">
         </section>
-        <section class="skills">
-            <div class="skill-item">
-                <h3>Skill One</h3>
-                <p>Skill description. Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-            </div>
-            <div class="skill-item">
-                <h3>Skill Two</h3>
-                <p>Skill description. Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-            </div>
-            <div class="skill-item">
-                <h3>Skill Three</h3>
-                <p>Skill description. Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-            </div>
-            <div class="skill-item">
-                <h3>Skill Four</h3>
-                <p>Skill description. Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-            </div>
-            <div class="skill-item">
-                <h3>Skill Five</h3>
-                <p>Skill description. Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+
+        <section>
+            <button class="accordion"><h2>Web Developement Skills (CLICK ME!)</h2></button>
+            <div class="panel">
+            <p>Lorem ipsum...</p>
             </div>
         </section>
+   
         <section class="portfolio">
             <div class="portfolio-item">
                 <img src="images/portfolio-img.png"/>
@@ -89,12 +75,32 @@
             </div>
         </section>
     </main>
-        <footer>
-            <div class="logo">
-                <h1>Electro</h1>
-                <img class="img-header" src="images/dev-black-logo.png"/>
-            </div>
-            <p>&#169;Copyright 2021 JoeDev</p>
-        </footer>
+    <footer>
+        <div class="logo">
+            <h1>Electro</h1>
+            <img class="img-header" src="images/dev-black-logo.png"/>
+        </div>
+        <p>&#169;Copyright 2021 ElectroDev</p>
+    </footer>
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+            /* Toggle between adding and removing the "active" class,
+            to highlight the button that controls the panel */
+            this.classList.toggle("active");
+
+            /* Toggle between hiding and showing the active panel */
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+            panel.style.display = "none";
+            } else {
+            panel.style.display = "block";
+            }
+        });
+        }
+    </script>
 </body>
 </html>
