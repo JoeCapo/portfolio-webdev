@@ -7,6 +7,12 @@ body{
     margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
 }
+#main{
+    position: relative;
+}
+#content-wrapper {
+    padding-bottom: 2.5rem;    /* Footer height */
+  }
 h1{
     color: black;
     margin-left: 5px;
@@ -102,6 +108,8 @@ nav a {
 
 /*Footer Section*/
 footer{
+    position:absolute;
+    bottom: 0;
     color: black;
     display: flex;
     align-items: center;
